@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Generator::: Diego Dalera</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="gradient"></div>
+
+    <div class="wrapper">
+        <div class="message hidden" id="message">Password in the clipboard </div>
+        <h2>Password Generator</h2>
+        <div class="pass-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <span class="material-symbols-outlined"> content_copy </span>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="adv-setting">
+                <label>Password Length (Max-50)</label>
+                <input type="number" id="length" min="6" max="50" value="50">
+            </div>
+            <div class="adv-setting">
+                <label>Uppercase letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="adv-setting">
+                <label>Lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="adv-setting">
+                <label>Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="adv-setting">
+                <label>Symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            Generate Password
+        </button>
+    </div>
+<script src="js/script.js"></script>
+</body>
+
+</html>
